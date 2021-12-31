@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+
+            </ul>
+        </nav>
+        <img src="cart.png" width="30px" height="30px">
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    
+</div>
+
+<!----cart items detials-->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="buy-1.jpg" alt="">
+                    <div>
+                        <p>Red Printed T-shirt</p>
+                        <small>Price:$50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+        
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+        </tr>
+        
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="buy-2.jpg" alt="">
+                    <div>
+                        <p>Red Printed T-shirt</p>
+                        <small>Price:$80.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+        
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+        </tr>
+        
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="buy-3.jpg" alt="">
+                    <div>
+                        <p>Red Printed T-shirt</p>
+                        <small>Price:$70.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+        
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$200.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+   
+
+
+<!---footer-->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+       <div class="footer-col-1">
+           <h3>
+               Download Our App
+           </h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+                <img src="play-store.png" >
+                <img src="app-store.png" alt="">
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <img src="logo-white.png" >
+             <p>Our  Purpose Is To Sustainably Make the Pleasure And
+                 Benfits of sports Accesible to the many
+             </p>
+             
+         </div>
+         <div class="footer-col-3">
+            <h3>
+                Useful Links
+            </h3>
+             <ul>
+                 <li>Coupons</li>
+                 <li>Blog Post</li>
+                 <li>Return Policy</li>
+             </ul>
+             
+         </div>
+         <div class="footer-col-4">
+            <h3>
+                Follow Us
+            </h3>
+             <ul>
+                 <li>Facebook</li>
+                 <li>Twiter</li>
+                 <li>Instragram</li>
+             </ul>
+             
+         </div>
+    </div>
+    <hr>
+    <p class="copyright">copyright 2021-abhi sharma</p>
+</div>
+</div>
+<!----js for toggle menu-->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if( MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px"
+        }
+        else{
+            MenuItems.style.maxHeight="0px"
+        }
+    }
+</script>
+
+
+</body>
+</html>
